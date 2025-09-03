@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Pokémon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+
+        <header>
+            <h4 id="MainTitle">DETALLES DE</h4>
+        </header>
+
+        <section class="container-info-pokemon">
+            
+            <header class="header-info-pokemon">
+                <h4 id="NamePokemon">Nombre Pokemon</h4>
+                <h6 id="NumberPokemon">#000</h6>
+            </header>
+
+            <!-- cotenido del pokemon -->
+            <div class="content-pokemon-detail">
+
+                <img 
+                    id="ImagePokemon" 
+                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" 
+                    alt="Imagen Pokemon" 
+                />
+
+                <!-- peso -->
+                <span id="weightPokemon">Peso 34kg</span>
+
+                <!-- altura -->
+                <span id="heightPokemon">Altura 1.5m</span>
+
+                <!-- habilidades -->
+                <ul id="abilitiesPokemon">
+                    <li>Habilidad 1</li>
+                    <li>Habilidad 2</li>
+                </ul>
+
+                <!-- ataques -->
+                <ul id="attacksPokemon">
+                    <li>Ataque 1</li>
+                    <li>Ataque 2</li>
+                </ul>
+
+                <!-- sprites -->
+                <footer>
+                    <img 
+                        id="SpriteFront" 
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" 
+                        alt="Sprite Frontal" 
+                    />
+                    <img 
+                        id="SpriteBack" 
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" 
+                        alt="Sprite Trasero" 
+                    />
+                </footer>
+
+            </div>
+
+            <footer>
+                
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="detalle.js"></script>
+</body>
+</html>

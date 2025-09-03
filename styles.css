@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Story Script", sans-serif;
+}
+
+/* PokeApp */
+
+:root {
+    --color-primary: #ec9b9b;
+    --color-secondary: #f6e4e4;
+    --color-tertiary: #67adce;
+    --section-width: 100%;
+    --section-padding: 16px;
+    --background-color: #615e75;
+}
+
+main {
+    padding: 10px;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+#MainTitle{
+    color: var(--color-primary);
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 16px;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+section {
+    width: var(--section-width);
+    padding: var(--section-padding);
+}
+
+.search-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-section input {
+    padding: 8px;
+    border: 1px solid var(--color-tertiary);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-section input:focus {
+    border-color: var(--color-primary);
+}
+
+.search-section button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-tertiary);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-section button:hover {
+    background-color: var(--color-primary);
+}
+
+.pokemon-section {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(1fr, 1fr);
+    gap: 10px;
+}
+
+.pokemon-card {
+    width: 200px;
+    background-color: rgb(62, 62, 62);
+    border-radius: 8px;
+    margin: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.pokemon-card #pokemonHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.pokemon-card #pokemonImage {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.pokemon-info-container {
+    background-color: rgb(233, 232, 232);
+    border-radius: 5px;
+    width: 100%;
+    color: black;
+    padding: 10px;
+    margin-top: -25px;
+}
+
+
+.pokemon-card .pokemon-info {
+    list-style: none;
+    padding: 0;
+}
+
+.pokemon-card .pokemon-info li {
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pokemon-card .pokemon-types {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.pokemon-card .pokemon-types li {
+    margin-bottom: 4px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.container-info-pokemon {
+    padding: 16px;
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+}
+
+.header-info-pokemon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.container-info-pokemon #ImagePokemon {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.container-info-pokemon .weightPokemon{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+.content-pokemon-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+    .pokemon-section {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .search-section input {
+        width: 300px;
+    }
+    
+}
+
+@media (min-width: 900px) {
+    .pokemon-section {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    .search-section input {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pokemon-section {
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+
+    .search-section input {
+        width: 450px;
+    }
+
+}
+
+@media (min-width: 1500px) {
+    .pokemon-section {
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+    }
+
+    .search-section input {
+        width: 500px;
+    }
+}

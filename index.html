@@ -4,10 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex + Js Vanilla</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Hola carmen soy sebas desde mi ordenador!</h1>
-    <h2>Carmen está aprendiendo git</h2>
+    <main>
+        <header>
+            <h4 id="MainTitle">POKEDEX</h4>
+        </header>
+
+        <!-- Seccion de busqueda -->
+        <section class="search-section">
+            <input id="searchBox" type="text" placeholder="Buscar Pokemon..." />
+            <button id="searchButton">Buscar</button>
+        </section>
+
+        <!-- Seccion de pokemones -->
+        <section class="pokemon-section">
+            <div class="pokemon-card">
+                
+                <header id="pokemonHeader">
+                    <h5>PokemonName</h5>
+                    <p>310</p>
+                </header>
+
+                <img 
+                    src="https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/001.png" 
+                    alt="pokeName" 
+                    id="pokemonImage"
+                />
+
+                <!-- informació pokemon -->
+                <div class="pokemon-info-container">
+                    <ul class="pokemon-info">
+                        <li>
+                            <p>nameAttack</p> - <span>50</span>
+                        </li>
+                        <li>
+                            <p>nameAttack</p> - <span>50</span>
+                        </li>
+                    </ul>
+
+                    <!-- tipos -->
+                    <ul class="pokemon-types">
+                        <li>Fuego</li>
+                        <li>Agua</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    
+
+    <script src="app.js"></script>
 </body>
 </html>
